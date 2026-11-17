@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "years": "2008-2012",
+    "layout": "long by crime head, years as columns",
+    "input": "counts, converted to rate per lakh women using Census-2011 female population"
+  },
+  "log": {
+    "dropped_states_no_pop": []
+  },
+  "run_date": "2026-11-17",
+  "dropped_heads": [
+    "Indecent representation"
+  ],
+  "n_states": 35,
+  "n_heads": 7,
+  "heads": [
+    "Assault on women (modesty)",
+    "Cruelty by husband/relatives",
+    "Dowry deaths",
+    "Immoral traffic & trafficking",
+    "Insult to modesty",
+    "Kidnapping & abduction",
+    "Rape"
+  ],
+  "desc": [
+    {
+      "head": "Assault on women (modesty)",
+      "mean": 7.52927596025259,
+      "sd": 5.574976348803913,
+      "median": 5.89604707478855,
+      "max": 19.050058380016026,
+      "argmax": "Tripura",
+      "skew": 0.7746585473452618
+    },
+    {
+      "head": "Cruelty by husband/relatives",
+      "mean": 11.743429201731638,
+      "sd": 12.08645419865427,
+      "median": 7.427720551127075,
+      "max": 44.97992197428521,
+      "argmax": "Tripura",
+      "skew": 1.2668852175411631
+    },
+    {
+      "head": "Dowry deaths",
+      "mean": 0.8372878200180955,
+      "sd": 0.8412342585042357,
+      "median": 0.6622430170994906,
+      "max": 2.5890902462867285,
+      "argmax": "Bihar",
+      "skew": 0.6682315267381782
+    },
+    {
+      "head": "Immoral traffic & trafficking",
+      "mean": 0.6334521099261801,
+      "sd": 1.033836595579037,
+      "median": 0.24004169137540932,
+      "max": 5.381614115171571,
+      "argmax": "Daman & Diu",
+      "skew": 3.2573057709096567
+    },
+    {
+      "head": "Insult to modesty",
+      "mean": 1.4603782395278,
+      "sd": 1.903159140411209,
+      "median": 0.504184473670905,
+      "max": 9.019537101123504,
+      "argmax": "Andhra Pradesh",
+      "skew": 2.190730311458059
+    },
+    {
+      "head": "Kidnapping & abduction",
+      "mean": 5.289949056805781,
+      "sd": 4.699315645912723,
+      "median": 4.515944931556629,
+      "max": 22.500197109748022,
+      "argmax": "Delhi",
+      "skew": 2.03642050081031
+    },
+    {
+      "head": "Rape",
+      "mean": 5.142323813885658,
+      "sd": 3.3809989718352673,
+      "median": 4.832508654111042,
+      "max": 15.942730003657875,
+      "argmax": "Mizoram",
+      "skew": 1.174283219018473
+    }
+  ],
+  "iqr_outlier_pct": {
+    "Assault on women (modesty)": 0.0,
+    "Cruelty by husband/relatives": 5.714285714285714,
+    "Dowry deaths": 0.0,
+    "Immoral traffic & trafficking": 5.714285714285714,
+    "Insult to modesty": 5.714285714285714,
+    "Kidnapping & abduction": 8.571428571428571,
+    "Rape": 2.857142857142857
+  },
+  "outliers": {
+    "Daman & Diu": [
+      "Immoral traffic & trafficking"
+    ],
+    "Goa": [
+      "Immoral traffic & trafficking"
+    ]
+  },
+  "skew_before": 1.6240735848315861,
+  "skew_after": 0.3950862960360966,
+  "corr": {
+    "Assault on women (modesty)": {
+      "Assault on women (modesty)": 1.0,
+      "Cruelty by husband/relatives": 0.406,
+      "Dowry deaths": 0.115,
+      "Immoral traffic & trafficking": -0.07,
+      "Insult to modesty": 0.419,
+      "Kidnapping & abduction": 0.173,
+      "Rape": 0.616
+    },
+    "Cruelty by husband/relatives": {
+      "Assault on women (modesty)": 0.406,
+      "Cruelty by husband/relatives": 1.0,
+      "Dowry deaths": 0.596,
+      "Immoral traffic & trafficking": -0.088,
+      "Insult to modesty": 0.293,
+      "Kidnapping & abduction": 0.459,
+      "Rape": 0.206
+    },
+    "Dowry deaths": {
+      "Assault on women (modesty)": 0.115,
+      "Cruelty by husband/relatives": 0.596,
+      "Dowry deaths": 1.0,
+      "Immoral traffic & trafficking": -0.304,
+      "Insult to modesty": 0.24,
+      "Kidnapping & abduction": 0.406,
+      "Rape": 0.125
+    },
+    "Immoral traffic & trafficking": {
+      "Assault on women (modesty)": -0.07,
+      "Cruelty by husband/relatives": -0.088,
+      "Dowry deaths": -0.304,
+      "Immoral traffic & trafficking": 1.0,
+      "Insult to modesty": 0.215,
+      "Kidnapping & abduction": -0.278,
+      "Rape": -0.263
+    },
+    "Insult to modesty": {
+      "Assault on women (modesty)": 0.419,
+      "Cruelty by husband/relatives": 0.293,
+      "Dowry deaths": 0.24,
+      "Immoral traffic & trafficking": 0.215,
+      "Insult to modesty": 1.0,
+      "Kidnapping & abduction": 0.188,
+      "Rape": -0.052
+    },
+    "Kidnapping & abduction": {
+      "Assault on women (modesty)": 0.173,
+      "Cruelty by husband/relatives": 0.459,
+      "Dowry deaths": 0.406,
+      "Immoral traffic & trafficking": -0.278,
+      "Insult to modesty": 0.188,
+      "Kidnapping & abduction": 1.0,
+      "Rape": 0.171
+    },
+    "Rape": {
+      "Assault on women (modesty)": 0.616,
+      "Cruelty by husband/relatives": 0.206,
+      "Dowry deaths": 0.125,
+      "Immoral traffic & trafficking": -0.263,
+      "Insult to modesty": -0.052,
+      "Kidnapping & abduction": 0.171,
+      "Rape": 1.0
+    }
+  },
+  "corr_mean": 0.17027224694190962,
+  "corr_max": [
+    "Assault on women (modesty)",
+    "Rape",
+    0.616247223766394
+  ],
+  "corr_min": [
+    "Dowry deaths",
+    "Immoral traffic & trafficking",
+    -0.30358014591307986
+  ],
+  "pca": {
+    "evr": [
+      0.36855134700342257,
+      0.195390048241578,
+      0.18584926214458466,
+      0.08892497791973837,
+      0.08523027848467792,
+      0.05187802379954871,
+      0.024176062406449764
+    ],
+    "n90": 5,
+    "n95": 6,
+    "pc1": 0.36855134700342257,
+    "pc2": 0.195390048241578,
+    "load": {
+      "PC1": [
+        "Cruelty by husband/relatives",
+        "Dowry deaths",
+        "Assault on women (modesty)"
+      ],
+      "PC2": [
+        "Immoral traffic & trafficking",
+        "Insult to modesty",
+        "Assault on women (modesty)"
+      ]
+    },
+    "loadvals": {
+      "PC1": {
+        "Assault on women (modesty)": 0.415,
+        "Cruelty by husband/relatives": 0.494,
+        "Dowry deaths": 0.431,
+        "Immoral traffic & trafficking": -0.218,
+        "Insult to modesty": 0.275,
+        "Kidnapping & abduction": 0.407,
+        "Rape": 0.332
+      },
+      "PC2": {
+        "Assault on women (modesty)": 0.276,
+        "Cruelty by husband/relatives": 0.098,
+        "Dowry deaths": -0.144,
+        "Immoral traffic & trafficking": 0.665,
+        "Insult to modesty": 0.625,
+        "Kidnapping & abduction": -0.172,
+        "Rape": -0.175
+      }
+    }
+  },
+  "ksel": [
+    {
+      "k": 2,
+      "min_size": 17,
+      "inertia": 180.2256263751478,
+      "sil": 0.20949483800106053,
+      "dbi": 1.610864824755256,
+      "ch": 11.860435014778123,
+      "ward_sil": 0.19768702468425087
+    },
+    {
+      "k": 3,
+      "min_size": 6,
+      "inertia": 152.88198407562598,
+      "sil": 0.20423023403436805,
+      "dbi": 1.4481309551645636,
+      "ch": 9.64069287628356,
+      "ward_sil": 0.2042421631762017
+    },
+    {
+      "k": 4,
+      "min_size": 6,
+      "inertia": 128.92229210411438,
+      "sil": 0.19597437186912214,
+      "dbi": 1.2963544740412924,
+      "ch": 9.303818825132456,
+      "ward_sil": 0.18564020470481057
+    },
+    {
+      "k": 5,
+      "min_size": 6,
+      "inertia": 113.20085320786896,
+      "sil": 0.1931723727845639,
+      "dbi": 1.4103221674957958,
+      "ch": 8.732209810519958,
+      "ward_sil": 0.19753929097404677
+    },
+    {
+      "k": 6,
+      "min_size": 4,
+      "inertia": 96.33049959105495,
+      "sil": 0.21303015572298975,
+      "dbi": 1.3127645672834178,
+      "ch": 8.951298976258514,
+      "ward_sil": 0.207689674303163
+    },
+    {
+      "k": 7,
+      "min_size": 2,
+      "inertia": 86.46824385063685,
+      "sil": 0.23107071784009348,
+      "dbi": 1.2046166157414746,
+      "ch": 8.55591404525689,
+      "ward_sil": 0.21044369152700945
+    },
+    {
+      "k": 8,
+      "min_size": 2,
+      "inertia": 78.8871825472747,
+      "sil": 0.23279013310152402,
+      "dbi": 1.1532675984996548,
+      "ch": 8.121989487122194,
+      "ward_sil": 0.21062796723117727
+    }
+  ],
+  "k_rule_fallback": false,
+  "k": 3,
+  "k_forced": false,
+  "compare": {
+    "km_sil": 0.2019293784557834,
+    "km_dbi": 1.4714958507727136,
+    "km_ch": 9.712950075262,
+    "ward_sil": 0.2042421631762017,
+    "ward_dbi": 1.4096381862845047,
+    "ward_ch": 9.232640436151005,
+    "ari": 0.7286128696794439,
+    "nmi": 0.7903987888420896,
+    "agree_pct": 91.42857142857143
+  },
+  "linkage": {
+    "ward": {
+      "coph": 0.5106048076216733,
+      "sil": 0.2042421631762017
+    },
+    "average": {
+      "coph": 0.6406128011847062,
+      "sil": 0.16702803608956915
+    },
+    "complete": {
+      "coph": 0.5193598148535616,
+      "sil": 0.17553761754770658
+    },
+    "single": {
+      "coph": 0.62644982609462,
+      "sil": 0.20585568757177344
+    }
+  },
+  "stability": {
+    "mean": 0.6225491940123247,
+    "sd": 0.23515222524339585,
+    "B": 200,
+    "p05": 0.28268573738286457
+  },
+  "pca_ari": 1.0,
+  "pca_npc": 5,
+  "ari_no_outliers": 0.4919975565058033,
+  "n_no_outliers": 33,
+  "ari_raw": 0.12593436026926094,
+  "weak_states": [
+    "Andhra Pradesh",
+    "Maharashtra",
+    "Gujarat",
+    "Dadra & Nagar Haveli",
+    "Arunachal Pradesh",
+    "Himachal Pradesh",
+    "Bihar",
+    "Punjab"
+  ],
+  "anova": {
+    "Assault on women (modesty)": {
+      "F": 7.386592153434517,
+      "p": 0.0023038205714650223
+    },
+    "Cruelty by husband/relatives": {
+      "F": 11.687561250662123,
+      "p": 0.0001546551738105376
+    },
+    "Dowry deaths": {
+      "F": 8.376569249256363,
+      "p": 0.0011867476835568398
+    },
+    "Immoral traffic & trafficking": {
+      "F": 21.316179196705516,
+      "p": 1.304863260612255e-06
+    },
+    "Insult to modesty": {
+      "F": 12.368232065560642,
+      "p": 0.00010485843856664058
+    },
+    "Kidnapping & abduction": {
+      "F": 8.26435235763061,
+      "p": 0.0012776751802346103
+    },
+    "Rape": {
+      "F": 4.376945041604854,
+      "p": 0.020878271291888795
+    }
+  },
+  "clusters": [
+    {
+      "id": 1,
+      "n": 12,
+      "states": [
+        "Arunachal Pradesh",
+        "Bihar",
+        "Dadra & Nagar Haveli",
+        "Gujarat",
+        "Jharkhand",
+        "Lakshadweep",
+        "Manipur",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Punjab",
+        "Sikkim"
+      ],
+      "mean_total": 18.149451421166034,
+      "sil": 0.16395212294394726,
+      "profile": {
+        "Assault on women (modesty)": 4.100576230431319,
+        "Cruelty by husband/relatives": 4.299538552943209,
+        "Dowry deaths": 0.4720919573634123,
+        "Immoral traffic & trafficking": 0.2580816333473545,
+        "Insult to modesty": 0.1531203649304594,
+        "Kidnapping & abduction": 3.758077000467709,
+        "Rape": 5.107965681682573
+      },
+      "z": {
+        "Assault on women (modesty)": -0.7354063965041868,
+        "Cruelty by husband/relatives": -0.8043115728675608,
+        "Dowry deaths": -0.5374809756016694,
+        "Immoral traffic & trafficking": -0.41296591445530945,
+        "Insult to modesty": -0.9077868606621925,
+        "Kidnapping & abduction": -0.3615946018757193,
+        "Rape": -0.08095390181682162
+      },
+      "top": [],
+      "low": [
+        "Insult to modesty",
+        "Cruelty by husband/relatives"
+      ]
+    },
+    {
+      "id": 2,
+      "n": 7,
+      "states": [
+        "Daman & Diu",
+        "Goa",
+        "Karnataka",
+        "Kerala",
+        "Maharashtra",
+        "Puducherry",
+        "Tamil Nadu"
+      ],
+      "mean_total": 25.266850291799834,
+      "sil": 0.20007836697633527,
+      "profile": {
+        "Assault on women (modesty)": 7.196865118661713,
+        "Cruelty by husband/relatives": 9.160001010425763,
+        "Dowry deaths": 0.3449480516257229,
+        "Immoral traffic & trafficking": 2.029862584574096,
+        "Insult to modesty": 1.614605869495738,
+        "Kidnapping & abduction": 2.146786076817452,
+        "Rape": 2.773781580199347
+      },
+      "z": {
+        "Assault on women (modesty)": 0.04142667449440679,
+        "Cruelty by husband/relatives": -0.12282121914936903,
+        "Dowry deaths": -0.5387135549328622,
+        "Immoral traffic & trafficking": 1.5106069022143633,
+        "Insult to modesty": 0.3287368170466646,
+        "Kidnapping & abduction": -0.7846888751284646,
+        "Rape": -0.8152207950307643
+      },
+      "top": [
+        "Immoral traffic & trafficking"
+      ],
+      "low": [
+        "Rape",
+        "Kidnapping & abduction"
+      ]
+    },
+    {
+      "id": 3,
+      "n": 16,
+      "states": [
+        "Andaman & Nicobar Islands",
+        "Andhra Pradesh",
+        "Assam",
+        "Chandigarh",
+        "Chhattisgarh",
+        "Delhi",
+        "Haryana",
+        "Himachal Pradesh",
+        "Jammu & Kashmir",
+        "Madhya Pradesh",
+        "Odisha",
+        "Rajasthan",
+        "Tripura",
+        "Uttar Pradesh",
+        "Uttarakhand",
+        "West Bengal"
+      ],
+      "mean_total": 46.72512487366124,
+      "sil": 0.23122213761191918,
+      "profile": {
+        "Assault on women (modesty)": 10.246230500814551,
+        "Cruelty by husband/relatives": 18.45659702201928,
+        "Dowry deaths": 1.3265833656807708,
+        "Immoral traffic & trafficking": 0.304050384701836,
+        "Insult to modesty": 2.3733470573648328,
+        "Kidnapping & abduction": 7.813986902804228,
+        "Rape": 6.204329640275732
+      },
+      "z": {
+        "Assault on women (modesty)": 0.533430627286836,
+        "Cruelty by husband/relatives": 0.6569679630285195,
+        "Dowry deaths": 0.6387979119843799,
+        "Immoral traffic & trafficking": -0.351166083877302,
+        "Insult to modesty": 0.5370177880387283,
+        "Kidnapping & abduction": 0.6144973342754924,
+        "Rape": 0.4173745241885743
+      },
+      "top": [
+        "Cruelty by husband/relatives",
+        "Dowry deaths"
+      ],
+      "low": []
+    }
+  ],
+  "national_mean_total": 32.63609620214774,
+  "extremes": {
+    "top_total": {
+      "Tripura": 83.6,
+      "Assam": 71.1,
+      "Delhi": 61.1
+    },
+    "bottom_total": {
+      "Lakshadweep": 4.5,
+      "Nagaland": 4.7,
+      "Daman & Diu": 13.8
+    }
+  }
+}
